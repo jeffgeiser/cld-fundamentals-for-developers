@@ -14,5 +14,5 @@ cloudinary.uploader.upload('transformations/img/dog.jpg',
              gravity: 'auto' } 
         } 
     })
-.then(uploadResult => console.log(uploadResult))
+.then(uploadResult => console.log(uploadResult.responsive_breakpoints[0].breakpoints))
 .catch(error => console.error(error))
